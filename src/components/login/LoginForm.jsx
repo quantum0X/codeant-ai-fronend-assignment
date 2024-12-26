@@ -17,7 +17,7 @@ export function LoginForm() {
           <div className="w-full flex justify-center space-x-4 mb-8 border border-gray-300 bg-[#fafafa] text-lg rounded-md">
             <button
               onClick={() => setActiveTab("saas")}
-              className={`w-1/2 px-6 py-2 rounded-md font-semibold ${
+              className={`w-1/2 px-4 py-2 rounded-md font-semibold ${
                 activeTab === "saas" ? " bg-blue-600 text-white" : ""
               }`}
             >
@@ -25,7 +25,7 @@ export function LoginForm() {
             </button>
             <button
               onClick={() => setActiveTab("self")}
-              className={`w-1/2 px-6 py-2 rounded-md font-semibold ${
+              className={`w-1/2 px-4 py-2 rounded-md font-semibold ${
                 activeTab === "self" ? " bg-blue-600 text-white " : ""
               }`}
             >
