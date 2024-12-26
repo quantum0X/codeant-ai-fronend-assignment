@@ -6,8 +6,8 @@ import IconImg from "../../assets/name.png";
 export function LoginForm() {
   const [activeTab, setActiveTab] = useState("saas");
   return (
-    <div className="">
-      <div className="h-[500px] w-[672px]  space-y-4 bg-white rounded-md border">
+    <div className="w-full px-4 flex flex-col items-center justify-center">
+      <div className="w-full sm:w-[90%] h-[580px] sm:h-[500px] space-y-4 bg-white rounded-md border">
         <div className="py-4 px-4 space-y-4">
           <img src={IconImg} alt="icon" className="h-[40px] mx-auto" />
           <div className="text-center">
@@ -34,7 +34,7 @@ export function LoginForm() {
           </div>
         </div>
         <div className="border-t"></div>
-        <div className="w-2/3 mx-auto space-y-4 py-4 px-4">
+        <div className="w-full md:w-2/3 mx-auto space-y-4 py-4 px-4">
           {activeTab === "saas" ? (
             <>
               <SocialButton icon={Github} text="Sign in with GitHub" />
@@ -52,9 +52,10 @@ export function LoginForm() {
       </div>
       <p className="text-center text-sm text-gray-600 mt-5">
         By signing up you agree to the{" "}
-        <a href="/#" className="text-blue-600 hover:underline">
+        <a href="/#" className="font-extrabold hover:underline">
           Privacy Policy
         </a>
+        .
       </p>
     </div>
   );
